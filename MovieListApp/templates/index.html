@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
+        <link href="/static/parchment.css" rel="stylesheet">
+        <title>Movie Lists</title>    
+    </head>
+    <body class="declaration">
+        <div class="header">
+            <h1>Make a Movie List</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Find your movie:</h2>
+                <hr>
+                <form id="search-form">
+                    <label>Title: <input id="title" name="title" type="search" placeholder="enter title"></label>
+                    <label style="margin-left:12px">Year: <input id="year" name="year" type="number" placeholder="1999"></label>
+                    <button type="submit">Search</button>
+                </form>
+                <div id="results" style="margin-top:12px"></div>
+            </div>
+
+            <div class="section" style="margin-top:16px">
+                <h2>Your Movie List</h2>
+                <div style="margin-bottom:8px; display:flex; gap:8px; align-items:center">
+                    <label>List:
+                        <select id="list-select"></select>
+                    </label>
+                    <button id="new-list" type="button">New List</button>
+                    <button id="rename-list" type="button">Rename</button>
+                    <button id="delete-list" type="button">Delete</button>
+                    <button id="clear-list" type="button">Clear list</button>
+                </div>
+                <div id="movie-list"></div>
+                <!-- Edit modal -->
+                <div id="edit-modal" class="modal" style="display:none;">
+                    <div class="modal-content">
+                        <h3>Edit movie</h3>
+                        <label>Title: <input id="edit-title" type="text"></label><br>
+                        <label>Year: <input id="edit-year" type="text"></label><br>
+                        <label>Genre: <input id="edit-genre" type="text"></label><br>
+                        <label>Synopsis: <br>
+                            <textarea id="edit-synopsis" maxlength="250" rows="3" style="width:100%;"></textarea>
+                        </label>
+                        <div style="margin-top:4px">
+                            <span id="synopsis-counter">Characters: 0/250</span>
+                        </div>
+                        <div style="margin-top:8px">
+                            <button id="edit-save" type="button">Save</button>
+                            <button id="edit-cancel" type="button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/app.js"></script>
+    </body>
+</html>

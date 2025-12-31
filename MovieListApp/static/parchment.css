@@ -1,0 +1,37 @@
+/* Declaration / parchment theme override */
+body.declaration {
+  font-family: 'IM Fell English', 'Times New Roman', serif;
+  background: #f3e4c8;
+  color: #2b1f0f;
+  margin: 0;
+  padding: 48px 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* subtle paper grain */
+  background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+.header{background:transparent;color:#2b1f0f;padding:12px;text-align:center}
+.header h1{font-variant:small-caps;font-size:2.4rem;margin:0;letter-spacing:1px;border-bottom:1px solid rgba(0,0,0,0.08);padding-bottom:8px}
+
+.container{max-width:900px;margin:24px auto;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,250,240,0.6));padding:28px 32px;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,0.25)}
+.section{background:transparent;padding:12px;border-radius:4px}
+#results ul{list-style:none;padding-left:0}
+#results li{margin:6px 0}
+#results button{margin-left:12px}
+.year{margin:12px 0;padding:8px;border-bottom:1px solid rgba(0,0,0,0.06)}
+.genre{margin-left:8px}
+.genre ul{margin:6px 0}
+
+/* modal styles */
+.modal{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center}
+.modal-content{background:linear-gradient(180deg,#fff9f0,#fffaf3);padding:20px;border-radius:6px;min-width:300px;box-shadow:0 8px 24px rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.06)}
+
+.search-note{margin-top:8px;color:#6b5542;font-style:italic}
+
+/* runtime in sans-serif for easier readability */
+.runtime{font-family:'Segoe UI', 'Helvetica Neue', Arial, sans-serif;font-size:0.9em;color:#555}
+
+/* synopsis under movie entries */
+.synopsis{font-size: calc(1em - 3pt);color:#4a3a2a;margin:6px 0 0 0;line-height:1.5;white-space:pre-wrap}

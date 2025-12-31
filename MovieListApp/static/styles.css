@@ -1,0 +1,41 @@
+/* Declaration / parchment theme */
+body.declaration {
+  font-family: 'IM Fell English', 'Times New Roman', serif;
+  background: #f3e4c8;
+  color: #2b1f0f;
+  margin: 0;
+  padding: 48px 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* subtle paper grain */
+  background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+.header{background:#222;color:#fff;padding:12px}
+.container{max-width:900px;margin:18px auto}
+.section{background:#f7f7f7;padding:12px;border-radius:6px}
+#results ul{list-style:none;padding-left:0}
+#results li{margin:6px 0}
+#results button{margin-left:12px}
+.year{margin:12px 0;padding:8px;border-bottom:1px solid #ddd}
+.genre{margin-left:8px}
+.genre ul{margin:6px 0}
+
+/* modal styles */
+.modal{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center}
+.modal-content{background:#fff;padding:16px;border-radius:6px;min-width:300px}
+
+.search-note{margin-top:8px;color:#666;font-style:italic}
+
+/* synopsis under movie entries */
+.synopsis{
+	/* try to make synopsis 5pt smaller than surrounding text */
+	font-size: calc(1em - 5pt);
+	/* fallback for very small results */
+	font-size: smaller;
+	color:#555;
+	margin:6px 0 0 0;
+	line-height:1.3;
+	/* preserve newlines entered in the textarea */
+	white-space: pre-wrap;
+}
